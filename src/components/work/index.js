@@ -3,15 +3,15 @@ import work from './work.json'
 // import {Link} from 'react-router-dom'
 import './work.scss'
 
-export const Website =()=> {
+export const Work =()=> {
     // const showClick =(i)=>{document.getElementById(i).classList.toggle('show')}
     const showClick =(i)=>{console.log(i)}
     return (
-        <div className="website">
+        <div className="work">
         {
             work.map((site, index)=>{
-                let val = "website__odd"
-                if(index % 2){val = "website__even"}
+                let val = "work__odd"
+                if(index % 2){val = "work__even"}
                 let lanList = []
                 for(let i = 0; i < site.language.length; i++){
                     lanList.push(<p key={i+1} className={`${val}__body__right__lan__each`}>{site.language[i]}</p>)
@@ -27,7 +27,7 @@ export const Website =()=> {
                                 <h2>{site.desc}</h2>
                                 <h2>{site.work}</h2>
                                 <div className={`${val}__body__right__lan`}>{lanList}</div>
-                                <h2><a href={site.link}>Visit {site.title}</a></h2>
+                                    <h2><a href={site.link}>Visit {site.title}</a></h2>
                             </div>
                         </div>
                     </div>
@@ -38,4 +38,10 @@ export const Website =()=> {
     )
 }
 
-export default Website
+export const ToolTip=(value)=>{
+    <div className="tip">
+        <p>{value}</p>
+    </div>
+}
+
+export default Work

@@ -1,21 +1,20 @@
 import React, {useState} from 'react'
 
-import * as Scroll from 'react-scroll';
 import { Link} from 'react-scroll'
 import emailjs from 'emailjs-com';
-
-import { NavLink } from 'react-router-dom';
+import ReactTooltip from 'react-tooltip';
 
 import Irl from '../../img/irl.jpg'
 import Arrow from '@material-ui/icons/ArrowDownward';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
-import Website from '../../components/work'
+import Work from '../../components/work'
 import './Home.scss';
+
+import MyCV from './ChrisFarrellCV.docx'
 
 
 function Home() {
-
-    const [modal, setModal] = useState(false)
 
     const modalClick =(category)=>{
         console.log(category)
@@ -31,20 +30,19 @@ function Home() {
             setStyle(newStyle);
         }, 200);
 
-        const percentCal=(per)=>{
-            let comment = "";
-            if(per<=19){comment = "Im getting there"}
-            if(per=>20 && per<=40){comment="I know my way around"}
-            if(per=>41 && per<=70){comment="I know what im doing"}
-            if(per=>71){comment="I know this"}
-            return{comment}
+        function comment(){
+            if(percent<30){return "Ive got the basics down"}
+            if(percent>29 && percent<50){return "I getting there"}
+            if(percent>49 && percent<70){return "I know my stuff"}
+            if(percent>69){return "I know this"}
         }
 
         return(
             <div className="home__about__info__bottom__skill__bar">
                 <div className="home__about__info__bottom__skill__bar__fill" style={style}>
-                    <p>{percentCal(percent)}</p>
-                </div>
+                    <h6 className="home__about__info__bottom__skill__bar__fill__text">{text}</h6>
+                </div>              
+                <h6 className="home__about__info__bottom__skill__bar__fill__tool" data-tooltip={comment(percent)}></h6>
             </div>
         )
     }
@@ -55,8 +53,13 @@ function Home() {
         .then((result) => {console.log(result.text)}, (error) => {console.log(error.text)})
     }
 
+    const cvdownload =()=>{
+        console.log('s')
+    }
+
     return (
         <div className="home">
+            <ReactTooltip />
             <div className="home__title">
                 <h1 className="home__title__first">Hello, I'm Chris</h1>
                 <h1>I am a web developer from Scotland</h1>
@@ -75,8 +78,8 @@ function Home() {
                         <h1>beautiful, aint I?</h1> 
                     </div>
                     <div className="home__about__info__bottom">
-                        <p>I’m a web developer from <span onClick={()=>modalClick('scotland')}>Scotland</span> living near Glasgow. I have Graduated from <span onClick={()=>modalClick('college')}>City of Glasgow College</span> with an HND and from <span onClick={()=>modalClick('uni')}>Edinburgh Napier</span> with an Ordinary Degree, both in Web Development</p>
-                        <p>Me and my friend currently own and run a web development business, <span>Ultroniq</span>.</p>
+                        <p>I’m a web developer from <span>Scotland</span>. I have Graduated from <span>Edinburgh Napier</span> with an Ordinary Degree in Web Development</p>
+                        <p>Me and my friend currently own and run a web development business, <span>Ultroniq</span>. It was started in 2018 during our time at <span>College</span></p>
                         <p>I am currently searching for an opportunity to <span>join a company</span> that will help me grow not just my <span>skills in web development</span>, but as a person as well</p>
                         <h4>Specking of <span>coding</span>, have told you what I know?</h4>
                         <div className="home__about__info__bottom__skill">
@@ -92,7 +95,7 @@ function Home() {
             </div>
             <div className="home__work">
                 <h1>Portfolio</h1>
-                <Website />
+                <Work />
             </div>
             <div className="home__contact">
                 <h1>Want to get in touch with me?</h1>
@@ -106,6 +109,14 @@ function Home() {
                     <textarea name="message" placeholder="Message..." required />
                     <button type="submit" value="Send">Send message</button>
                 </form>
+            </div>
+            <div className="home__footer">
+                <div className="home__footer__cv">
+                    <a href={MyCV} download="Chris Farrell CV.docx">Download my CV</a> 
+                </div>
+                <div className="home__footer__social">
+                    <a href="https://github.com/cfman29"><GitHubIcon /></a>
+                </div>
             </div>
         </div>
     )

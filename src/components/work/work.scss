@@ -1,4 +1,4 @@
-.website {
+.work {
 	&__odd,
 	&__even {
 		display: flex;
@@ -67,5 +67,61 @@
 	}
 	* {
 		color: var(--purple);
+	}
+}
+
+.tip {
+	display: block;
+}
+
+@media screen and (max-width: 990px) {
+	.work {
+		width: 100%;
+		&__odd,
+		&__even {
+			min-width: 80%;
+			margin: 2em auto;
+			padding: 1em;
+			// flex-direction: column;
+			border-radius: 20px;
+			&__body {
+				// outline: 1px solid red;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				margin: 0 auto;
+				padding: 0;
+				max-width: 100%;
+				font-size: 0.8em;
+
+				&__left {
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					img {
+						margin: 0;
+						padding: 0;
+					}
+				}
+				&__right {
+					width: 100%;
+					padding: 0;
+					margin: 0;
+
+					&__lan {
+						display: flex;
+						flex-direction: column;
+						margin: 0 auto 1em;
+						width: 90%;
+						// flex-wrap: wrap;
+						align-content: stretch;
+
+						&__each {
+							margin-top: 1.4em;
+						}
+					}
+				}
+			}
+		}
 	}
 }
