@@ -78,10 +78,10 @@ function Home() {
                         <h1>beautiful, aint I?</h1> 
                     </div>
                     <div className="home__about__info__bottom">
-                        <p>I’m a web developer from <span>Scotland</span>. I have Graduated from <span>Edinburgh Napier</span> with an Ordinary Degree in Web Development</p>
-                        <p>Me and my friend currently own and run a web development business, <span>Ultroniq</span>. It was started in 2018 during our time at <span>College</span></p>
+                        <p>I’m a web developer from <span>Scotland</span>. I have Graduated from <span>Edinburgh Napier</span> with a Degree in Web Development.</p>
+                        <p>Currently, I run a <span>web development company</span> with my business partner. <span>Ultroniq</span> was founded in 2018 and has been on the go ever since</p>
                         <p>I am currently searching for an opportunity to <span>join a company</span> that will help me grow not just my <span>skills in web development</span>, but as a person as well</p>
-                        <h4>Specking of <span>coding</span>, have told you what I know?</h4>
+                        <h4>Speaking of <span>coding</span>, have I told you what I know?</h4>
                         <div className="home__about__info__bottom__skill">
                             <Bar percent="80" text="JavaScript (React)" />
                             <Bar percent="90" text="HTML / CSS / SCSS" />
@@ -99,7 +99,6 @@ function Home() {
             </div>
             <div className="home__contact">
                 <h1>Want to get in touch with me?</h1>
-                
                 <form className="home__contact__form" onSubmit={sendEmail}>
                     <label>Name</label>
                     <input type="text" name="user_name" placeholder="Christopher Farrell" required />
