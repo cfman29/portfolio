@@ -78,8 +78,8 @@ function Home() {
                         <h1>beautiful, aint I?</h1> 
                     </div>
                     <div className="home__about__info__bottom">
-                        <p>I’m a web developer from <span>Scotland</span>. I have Graduated from <span>Edinburgh Napier</span> with a Degree in Web Development.</p>
-                        <p>Currently, I run a <span>web development company</span> with my business partner. <span>Ultroniq</span> was founded in 2018 and has been on the go ever since</p>
+                        <p>I’m a web developer from <span>Scotland</span>. I have Graduated from <span>Edinburgh Napier University</span> with a Degree in Web Development.</p>
+                        <p>Currently, I run a <span>web development company</span> with my business partner, <span>Ultroniq</span>. We founded Ultroniq in 2018 and has been on the go ever since</p>
                         <p>I am currently searching for an opportunity to <span>join a company</span> that will help me grow not just my <span>skills in web development</span>, but as a person as well</p>
                         <h4>Speaking of <span>coding</span>, have I told you what I know?</h4>
                         <div className="home__about__info__bottom__skill">

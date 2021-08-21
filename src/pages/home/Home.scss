@@ -49,6 +49,10 @@
 				margin: 4em auto;
 				display: grid;
 				grid-template-columns: 30% 40% 30%;
+				img {
+					border-radius: 15px;
+					box-shadow: 0 0px 10px 1px var(--yellow);
+				}
 				h1 {
 					width: 100%;
 					font-size: 1.8em;
@@ -58,7 +62,6 @@
 					grid-column: 1;
 					margin: 0 0 auto 0;
 					text-align: left;
-					// padding-top: 1em;
 				}
 				h1:last-of-type {
 					display: grid;

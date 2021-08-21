@@ -1,7 +1,7 @@
 [
     {
         "title": "XPC International",
-        "desc": "During my 2nd trimester of uni I had a Group Project module where groups had to take on real client work. My group chose Vince and his company 'XPC International'.",
+        "desc": "During my 2nd trimester at University, I had a Group Project module where groups had to take on real client work. My group chose Vince and his company 'XPC International'.",
         "work": "My input on this project was to co-develop the website with another member of my group. We used React for the front-end development and Express / Node for the backend, using MongoDB as the database.",
         "language": ["JavaScript (React)", "HTML", "CSS / SCSS"],
         "image": "xpc.png",
@@ -9,8 +9,8 @@
     },
     {
         "title": "ThriveWise",
-        "desc": "Sarah from ThriveWise was Ultroniq's first client. Sarah approched City of Glasgow College with her idea for her company and we were asked if we wanted to take on this project which we happy accpted.",
-        "work": "I was involved little for the first iteration of the website but I was involved heavily for the re-design and development of ThriveWise. I was mainly in charge with taking the design for pages and make it a reailty using WordPress and Divi.",
+        "desc": "Sarah from ThriveWise was Ultroniq's first client. Sarah approached City of Glasgow College with her idea for her company and we were asked if we wanted to take on this project which we happily accepted.",
+        "work": "I was involved little for the first iteration of the website but I was involved heavily in the re-design and development of ThriveWise. I was mainly in charge of taking the design for pages and make it a reality using WordPress and Divi.",
         "language": ["WordPress", "Divi (Page Builder)", "Adobe XD"],
         "image": "thrivewise.jpg",
         "link": "https://thrivewise.co.uk/"    
