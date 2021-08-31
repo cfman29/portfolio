@@ -14,5 +14,21 @@
         "language": ["WordPress", "Divi (Page Builder)", "Adobe XD"],
         "image": "thrivewise.jpg",
         "link": "https://thrivewise.co.uk/"    
+    },
+    {
+        "title": "AWT",
+        "desc": "My first project at my time at university was for my 'Advanced Web Technologies (AWT)' module, I had to create a website using python and flask. We had a simple brief that let me decided most of the function and design of the website.",
+        "work": "I had chosen to make my site similar to stack overflow, users would create an account and use the forums to post questions and receive answers via a comment section.",
+        "language": ["Python", "HTML", "CSS", "JavaScript"],
+        "image": "awt.jpg",
+        "link": "#"
+    },
+    {
+        "title": "DVI",
+        "desc": "One of the last modules I had at university was 'Designing the Visual Interface (DVI)'. Half of the modules mark came from the practical side where I had to create a website for a fictional company.",
+        "work": "The website was for 'JusJax' a company that sold healthy snack bars. The site was a simple 1-page static site, I had complete control over the design and any functionality of the site. I mainly used React for this project.",
+        "language": ["JavaScript (React)", "HTML", "CSS"],
+        "image": "dvi.jpg",
+        "link": "#"
     }
 ]

@@ -16,10 +16,6 @@ import MyCV from './ChrisFarrellCV.docx'
 
 function Home() {
 
-    const modalClick =(category)=>{
-        console.log(category)
-    }
-
     const Bar =({ percent, text })=>{
         const [style, setStyle] = useState({})
         setTimeout(() => {
@@ -48,13 +44,15 @@ function Home() {
     }
 
     function sendEmail(e) {
-        e.preventDefault();
-        emailjs.sendForm('service_utm91tl', 'template_xm5qune', e.target, 'user_NafpG0NIxGhxNGKEXwGb9')
+        const {REACT_APP_SERVICE, REACT_APP_TEMPLATE, REACT_APP_USER} = process.env;
+        e.preventDefault()
+        emailjs.sendForm(REACT_APP_SERVICE, REACT_APP_TEMPLATE, e.target, REACT_APP_USER)
         .then((result) => {console.log(result.text)}, (error) => {console.log(error.text)})
+        alert('The form was submitted successfully')
     }
 
     const cvdownload =()=>{
-        console.log('s')
+        console.log('Error with CV download')
     }
 
     return (

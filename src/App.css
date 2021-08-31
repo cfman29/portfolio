@@ -1,0 +1,22 @@
+:root {
+  --pink: #F6E4F6;
+  --blue: #98DFEA;
+  --yellow: #FFD151;
+  --purple: #3B3355;
+  --black: #000505;
+  --text: 'Rubik', sans-serif;
+  --code-text: 'Arvo', serif;
+  --h-text: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--text);
+  color: var(--blue);
+}
+
+h1, h2, h3 {
+  font-family: var(--h-text);
+}
+/*# sourceMappingURL=App.css.map */

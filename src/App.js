@@ -5,6 +5,7 @@ import './App.scss';
 
 const WrongPage=()=> { return (<Redirect to="/" />); }
 
+
 function App() {
   return (
     <Router>
